@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4-1</title>
+</head>
+<body>
+    <script>
+    var user = {
+        name: "areej mustafa",
+        number: "+938458554",
+        age: 24,
+        email: "areejmustafa44@gmail.com"
+        };
+
+        console.log(user);
+
+        console.table({"Name: " :user.name,
+        "number:  " : user.number,
+        "Age: " : user.age,
+        "Email: " : user.email,})
+        document.write("user : " + user+ "<br>");
+        /* ###################### */
+        document.write("Name : " + user.name+ "<br>");
+        document.write("Name : " + user.number+ "<br>");
+        document.write("Age :" +user.age+ "<br>");
+        document.write("Email:" + user.email + "<br>");
+        /* ########################## */
+
+/* task4-2 */
+var numbers = [];
+for (var i = 0; i < 10; i++) {
+  numbers.push(Math.floor(Math.random() * 10));
+}
+
+
+var evenSum = 0;
+for (var i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 === 0) {
+    evenSum += numbers[i];
+  }
+}
+
+
+var lessThanFiveSum = 0;
+for (var i = 0; i < numbers.length; i++) {
+  if (numbers[i] < 5) {
+    lessThanFiveSum += numbers[i];
+  }
+}
+
+console.log("random array :" + numbers);
+console.log("even number :" + evenSum);
+console.log( "the number which index less 5:" + lessThanFiveSum);
+document.write("random array : " + numbers + "<br>");
+document.write("even number :" + evenSum + "<br>");
+document.write("the number which index less 5:" + lessThanFiveSum + "<br>");
+
+
+    </script>
+
+</body>
+</html>
